@@ -27,10 +27,10 @@ fr:
       url: /contact/
     - title: Éléments
       url: /elements/
-  hero_title: Developer advocate,
-  hero_description: je travaille sur l’IA appliquée au développement, la Developer Experience et la qualité logicielle. Je partage ici mes projets, mes publications et mes retours d’expérience autour des outils et des pratiques qui font évoluer le quotidien des développeurs.
+  hero_title: Developer advocate
+  hero_description: Je travaille sur l’IA appliquée au développement, la Developer Experience et la qualité logicielle. Je partage ici mes projets, mes publications et mes retours d’expérience autour des outils et des pratiques qui font évoluer le quotidien des développeurs.
   projects_title: À découvrir
-  projects_description: Une sélection de projets, publications et talks autour de l’IA, de la Developer Experience et des pratiques de développement.
+  projects_description: Sélection de projets
   testimonials_title: Témoignages
   blog_title: Articles récents
   see_all: Voir tout
@@ -69,7 +69,7 @@ en:
       url: /contact/
     - title: Elements
       url: /elements/
-  hero_title: Developer advocate,
+  hero_title: Developer advocate
   hero_description: I work on AI applied to software development, Developer Experience, and software quality. I share my projects, publications, and lessons learned about the tools and practices shaping developers’ daily work.
   projects_title: Discover
   projects_description: A selection of projects, publications, and talks about AI, Developer Experience, and software development practices.

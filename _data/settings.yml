@@ -47,8 +47,8 @@ social:
 #-------------------------------
 # Hero Settings
 hero:
-  hero__title: Developer advocate,
-  hero__description: je travaille sur l’IA appliquée au développement, la Developer Experience et la qualité logicielle. Je partage ici mes projets, mes publications et mes retours d’expérience autour des outils et des pratiques qui font évoluer le quotidien des développeurs.
+  hero__title: Developer advocate
+  hero__description: Je travaille sur l’IA appliquée au développement, la Developer Experience et la qualité logicielle. Je partage ici mes projets, mes publications et mes retours d’expérience autour des outils et des pratiques qui font évoluer le quotidien des développeurs.
   hero__image: '/images/profile-pic.png'
 
 
