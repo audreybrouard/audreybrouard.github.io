@@ -1,4 +1,6 @@
 <!-- begin hero -->
+{% assign lang = page.lang | default: "fr" %}
+{% assign t = site.data.i18n[lang] %}
 <section class="hero">
   <div class="container">
     <div class="row">
@@ -7,13 +9,13 @@
 
           <div class="hero__left">
             <div class="hero__image">
-              <img class="lazy" data-src="{{ site.data.settings.hero.hero__image }}" alt="{{site.data.settings.author.author__name}}'s Picture">
+              <img class="lazy" data-src="{{ site.data.settings.hero.hero__image }}" alt="{{ t.picture_alt }} {{ site.data.settings.title }}">
             </div>
           </div>
 
           <div class="hero__right">
-            <h1 class="hero__title">{{ site.data.settings.hero.hero__title }}</h1>
-            <p class="hero__description">{{ site.data.settings.hero.hero__description }}</p>
+            <h1 class="hero__title">{{ t.hero_title }}</h1>
+            <p class="hero__description">{{ t.hero_description }}</p>
             {% if site.data.settings.mailchimp == "enable" %}
             <div class="hero__subscribe">
               <form class="subscribe-form validate"

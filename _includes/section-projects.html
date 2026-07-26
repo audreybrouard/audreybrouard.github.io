@@ -1,4 +1,6 @@
 <!-- begin projects -->
+{% assign lang = page.lang | default: "fr" %}
+{% assign t = site.data.i18n[lang] %}
 <section class="section projects animate">
   <div class="container">
     <div class="row">
@@ -6,10 +8,8 @@
         <div class="contaniner__inner">
 
           <div class="section__info">
-            <h2 class="section__title">{{ site.data.settings.projects__settings.projects__title }}</h2>
-            {% if site.data.settings.projects__settings.projects__description %}
-              <p class="section__description">{{ site.data.settings.projects__settings.projects__description }}</p>
-            {% endif %}
+            <h2 class="section__title">{{ t.projects_title }}</h2>
+            <p class="section__description">{{ t.projects_description }}</p>
           </div>
 
           <div class="row">
@@ -37,7 +37,7 @@
   </div>
 
   <div class="section__navigation">
-    <a href="{{ '/projects' | relative_url }}" class="button button--primary section-button">See all</a>
+    <a href="{{ '/projects' | relative_url }}" class="button button--primary section-button">{{ t.see_all }}</a>
   </div>
 </section>
 <!-- end projects -->
