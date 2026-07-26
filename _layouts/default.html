@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ page.lang | default: 'fr' }}">
 
 {% include head.html %}
 
@@ -19,8 +19,16 @@
 
   {% include footer.html %}
 
+  {% if jekyll.environment == "development" and page.lang == "en" %}
+  <script src="../js/scripts.js"></script>
+  <script src="../js/common.js"></script>
+  {% elsif jekyll.environment == "development" and page.url == "/" %}
+  <script src="js/scripts.js"></script>
+  <script src="js/common.js"></script>
+  {% else %}
   <script src="{{ site.baseurl }}/js/scripts.js"></script>
   <script src="{{ site.baseurl }}/js/common.js"></script>
+  {% endif %}
 </body>
 
 </html>
