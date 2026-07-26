@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     menuCloseIcon = document.querySelector(".nav__icon-close"),
     menuList = document.querySelector(".main-nav"),
     toggleTheme = document.querySelector(".toggle-theme-js"),
+    languageSwitcher = document.querySelector(".language-switcher-js"),
     btnScrollToTop = document.querySelector(".top");
 
 
@@ -33,6 +34,42 @@ document.addEventListener("DOMContentLoaded", function() {
       darkMode();
     });
   };
+
+
+  // Language Switcher
+  if (languageSwitcher) {
+    var languageButton = languageSwitcher.querySelector(".language-switcher__button"),
+      languageOptions = languageSwitcher.querySelectorAll(".language-switcher__option");
+
+    languageButton.addEventListener("click", function() {
+      var isOpen = languageSwitcher.classList.toggle("is-open");
+      languageButton.setAttribute("aria-expanded", isOpen);
+    });
+
+    languageOptions.forEach(function(option) {
+      option.addEventListener("click", function() {
+        localStorage.setItem("language", option.dataset.language);
+      });
+    });
+
+    document.addEventListener("click", function(event) {
+      if (!languageSwitcher.contains(event.target)) {
+        closeLanguageSwitcher();
+      }
+    });
+
+    document.addEventListener("keydown", function(event) {
+      if (event.key === "Escape") {
+        closeLanguageSwitcher();
+        languageButton.focus();
+      }
+    });
+
+    function closeLanguageSwitcher() {
+      languageSwitcher.classList.remove("is-open");
+      languageButton.setAttribute("aria-expanded", "false");
+    }
+  }
 
 
   // Theme Switcher
