@@ -12,9 +12,9 @@ L’objectif : mieux comprendre ce qui se passe derrière un assistant IA ou un 
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/projects/ai-summer-book/00-ai-summer-book.png" loading="lazy" alt="Project">
-    <img src="/images/projects/ai-summer-book/00-ai-summer-book.png" loading="lazy" alt="Project">
-    <img src="/images/projects/ai-summer-book/00-ai-summer-book.png" loading="lazy" alt="Project">
+    <img src="/images/projects/ai-summer-book/main.png" loading="lazy" alt="Project">
+    <img src="/images/projects/ai-summer-book/main.png" loading="lazy" alt="Project">
+    <img src="/images/projects/ai-summer-book/main.png" loading="lazy" alt="Project">
   </div>
 </div>
 
