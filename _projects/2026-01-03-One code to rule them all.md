@@ -2,7 +2,8 @@
 title: One code to rule them all
 date: 2026-01-03 08:01:35 +0300
 subtitle: Talk
-image: '/images/project-6.jpg'
+image: '/images/projects/one-code-to-rule-them-all/main.gif'
+miniature: '/images/projects/one-code-to-rule-them-all/miniature.png'
 ---
 
 In qua quid est boni praeter summam voluptatem, et eam sempiternam? Cur post Tarentum ad Archytam? Qua ex cognitione facilior facta est investigatio rerumano occultissimarum. Negat enim tenuissimo victu, id est contemptissimis escis et sed potionibus, minorem voluptatem. Ego quoque, inquit, didicerim libentius si table quiduse proactive domination.

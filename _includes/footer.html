@@ -1,18 +1,5 @@
 <!-- begin footer -->
 <footer class="footer">
-
-  <div class="footer__gallery">
-    {% if site.data.settings.gallery %}
-    <div class="gallery">
-      {% for image in site.data.settings.gallery.gallery__images %}
-      <div class="gallery__image">
-        <img src="{{site.baseurl}}{{image.url}}" alt="{{image.alt}}" loading="lazy">
-      </div>
-      {% endfor %}
-    </div>
-    {% endif %}
-  </div>
-
   <div class="container">
     <div class="row">
       <div class="col-12">
