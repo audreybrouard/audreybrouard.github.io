@@ -21,8 +21,12 @@
                       <ul class="social__list list-reset">
                         {% for social in site.data.settings.social %}
                         <li class="social__item">
+                          {% if social.link and social.link != "" %}
                           <a class="social__link" href="{{social.link}}" target="_blank" rel="noopener"
                             aria-label="Social link"><i class="ion {{social.icon}}"></i></a>
+                          {% else %}
+                          <span class="social__link" aria-label="Chaîne YouTube à venir"><i class="ion {{social.icon}}"></i></span>
+                          {% endif %}
                         </li>
                         {% endfor %}
                       </ul>

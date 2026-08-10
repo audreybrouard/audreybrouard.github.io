@@ -12,6 +12,9 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
+exclude:
+  - "images/projects/ai-summer-book/Agents et optimisation des tokens - Summer book 2026.pdf"
+
 paginate: 6
 paginate_path: "/blog/page/:num"
 

@@ -25,7 +25,12 @@
   font-size: 40px;
   line-height: 1;
   font-weight: 800;
+  color: var(--heading-font-color);
   transition: color .25s ease;
+
+  &:hover {
+    color: var(--heading-font-color);
+  }
 }
 
 .logo__image {

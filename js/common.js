@@ -143,6 +143,64 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
 
+  /* =======================
+  // Project Book Reader
+  ======================= */
+  document.querySelectorAll("[data-book-reader]").forEach(function(reader) {
+    var image = reader.querySelector("[data-book-image]"),
+      previous = reader.querySelector("[data-book-previous]"),
+      next = reader.querySelector("[data-book-next]"),
+      currentLabel = reader.querySelector("[data-book-current]"),
+      pageCount = Number(reader.dataset.pageCount),
+      pagesBase = reader.dataset.pagesBase,
+      currentPage = 1;
+
+    function pageUrl(page) {
+      return pagesBase + "/page-" + String(page).padStart(2, "0") + ".jpg";
+    }
+
+    function preload(page) {
+      if (page >= 1 && page <= pageCount) {
+        var preloadImage = new Image();
+        preloadImage.src = pageUrl(page);
+      }
+    }
+
+    function showPage(page) {
+      currentPage = Math.max(1, Math.min(pageCount, page));
+      image.src = pageUrl(currentPage);
+      image.alt = "Page " + currentPage + " du livret Agents et optimisation des tokens";
+      currentLabel.textContent = currentPage;
+      previous.disabled = currentPage === 1;
+      next.disabled = currentPage === pageCount;
+      preload(currentPage - 1);
+      preload(currentPage + 1);
+    }
+
+    previous.addEventListener("click", function() {
+      showPage(currentPage - 1);
+    });
+
+    next.addEventListener("click", function() {
+      showPage(currentPage + 1);
+    });
+
+    reader.addEventListener("keydown", function(event) {
+      if (event.key === "ArrowLeft") {
+        event.preventDefault();
+        showPage(currentPage - 1);
+      }
+
+      if (event.key === "ArrowRight") {
+        event.preventDefault();
+        showPage(currentPage + 1);
+      }
+    });
+
+    preload(2);
+  });
+
+
   /* ============================
   // Testimonials Slider
   ============================ */

@@ -43,6 +43,11 @@ h6 {
   line-height: $heading-line-height;
   letter-spacing: $heading-letter-spacing;
   color: var(--heading-font-color);
+
+  a,
+  a:hover {
+    color: var(--heading-font-color);
+  }
 }
 
 h1 {

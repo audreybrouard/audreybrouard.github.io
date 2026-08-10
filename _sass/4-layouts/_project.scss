@@ -12,6 +12,121 @@
   }
 }
 
+.project-book {
+  margin: 48px 0;
+}
+
+.project-book__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 24px 0;
+}
+
+.project-book__notice {
+  margin: -8px 0 0;
+  font-size: 14px;
+  color: var(--text-alt-color);
+}
+
+.project-book__preview-section {
+  margin-top: 56px;
+}
+
+.project-book__download {
+  background-color: var(--background-alt-color);
+}
+
+.project-book__reader {
+  padding: 16px;
+  border: 1px solid var(--border-color-alt);
+  border-radius: 14px;
+  outline: none;
+  background-color: var(--background-alt-color);
+  box-shadow: 0 16px 40px rgba(24, 24, 24, .1);
+
+  &:focus-visible {
+    box-shadow: 0 0 0 3px var(--button-background-color), 0 16px 40px rgba(24, 24, 24, .1);
+  }
+}
+
+.project-book__page {
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: var(--white);
+}
+
+.project-book__image {
+  display: block;
+  width: 100%;
+  margin: 0;
+  border-radius: 8px;
+}
+
+.project-book__toolbar {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 16px;
+  padding-top: 16px;
+}
+
+.project-book__control {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  padding: 10px 14px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--dark);
+  border: 0;
+  border-radius: 8px;
+  background-color: var(--button-background-color);
+  cursor: pointer;
+  transition: opacity .2s ease, transform .2s ease, background-color .2s ease;
+
+  &:hover:not(:disabled) {
+    transform: translateY(-2px);
+    background-color: var(--button-background-hover);
+  }
+
+  &:disabled {
+    opacity: .35;
+    cursor: not-allowed;
+  }
+
+  &:last-child {
+    justify-self: end;
+  }
+}
+
+.project-book__counter {
+  font-size: 14px;
+  color: var(--text-color);
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: $mobile) {
+  .project-book__reader {
+    padding: 8px;
+  }
+
+  .project-book__toolbar {
+    gap: 8px;
+    padding-top: 10px;
+  }
+
+  .project-book__control {
+    padding: 10px;
+
+    span {
+      display: none;
+    }
+  }
+}
+
 /* Project Navigation */
 .project__nav {
   max-width: 780px;

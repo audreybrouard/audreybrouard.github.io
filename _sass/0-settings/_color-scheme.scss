@@ -1,7 +1,7 @@
 /* Color Scheme */
 
 :root {
-  --brand-color: #ddcb19;
+  --brand-color: #dceaf5;
   --white: #fff;
   --light-gray: #ededf1;
   --light-blue: #f3f7ff;
@@ -21,9 +21,9 @@
   --link-color: var(--dark);
   --link-color-hover: var(--dark);
 
-  --button-color: var(--white);
-  --button-background-color: var(--brand-color);
-  --button-background-hover: #e7d62d;
+  --button-color: var(--dark);
+  --button-background-color: #a9bece;
+  --button-background-hover: #91acbf;
 
   --border-color: var(--light-blue);
   --border-color-alt: var(--light-blue);
@@ -35,7 +35,7 @@
 }
 
 :root[dark] {
-  --brand-color: #ad72df;
+  --brand-color: #dceaf5;
   --white: #fff;
   --light-gray: #f0f0f0;
   --gray: #9e9e9e;
@@ -52,9 +52,9 @@
   --link-color: var(--light-gray);
   --link-color-hover: var(--light-gray);
 
-  --button-color: var(--white);
-  --button-background-color: var(--brand-color);
-  --button-background-hover: #ba7cef;
+  --button-color: var(--dark);
+  --button-background-color: #a9bece;
+  --button-background-hover: #bdd0dd;
 
   --border-color: #252629;
   --border-color-alt: #080b12;
