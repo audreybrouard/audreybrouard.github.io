@@ -31,7 +31,7 @@ menu__settings:
 author:
   author__name: Audrey Brouard
   author__bio: Je partage mes projets, mes publications et mes retours d’expérience autour du développement logiciel, de la Developer Experience et des pratiques qui facilitent le quotidien des équipes techniques.
-  author__avatar: '/images/profile-pic.jpg'
+  author__avatar: '/images/profile-pic2.jpg'
 
 social:
 - {icon: "ion-logo-linkedin", link: "https://fr.linkedin.com/in/audreybrouard"}
