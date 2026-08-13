@@ -12,6 +12,53 @@
   }
 }
 
+.project-events {
+  padding-bottom: 20px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid var(--button-background-color);
+}
+
+.project-event {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  line-height: 1.5;
+
+  .ion {
+    flex: 0 0 auto;
+    color: var(--heading-font-color);
+  }
+}
+
+.project-speakers {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--button-background-color);
+}
+
+.project-publication {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--button-background-color);
+}
+
+.project-video {
+  position: relative;
+  overflow: hidden;
+  margin: 32px 0 48px;
+  padding-top: 56.25%;
+  border-radius: 10px;
+  background-color: var(--dark);
+
+  iframe,
+  .js-reframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}
+
 .project-book {
   margin: 48px 0;
 }

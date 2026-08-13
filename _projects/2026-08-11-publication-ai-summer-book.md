@@ -1,9 +1,9 @@
 ---
 title: Agents et optimisation des tokens
-date: 2026-01-12 08:01:35 +0300
+date: 2026-08-11 08:01:35 +0300
 subtitle: Guide
-image: '/images/projects/ai-summer-book/main.png'
-miniature: '/images/projects/ai-summer-book/miniature.png'
+image: '/images/projects/2026-08-11-publication-ai-summer-book/main.jpg'
+miniature: '/images/projects/2026-08-11-publication-ai-summer-book/miniature.jpg'
 ---
 
 Agents et optimisation des tokens est un guide pratique consacré aux nouveaux usages de l’IA dans le développement logiciel.
@@ -23,9 +23,9 @@ L’objectif : mieux comprendre ce qui se passe derrière un assistant IA ou un 
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/projects/ai-summer-book/8-9.png" loading="lazy" alt="Project">
-    <img src="/images/projects/ai-summer-book/10-11.png" loading="lazy" alt="Project">
-    <img src="/images/projects/ai-summer-book/50-51.png" loading="lazy" alt="Project">
+    <img src="/images/projects/2026-08-11-publication-ai-summer-book/8-9.jpg" loading="lazy" alt="Project">
+    <img src="/images/projects/2026-08-11-publication-ai-summer-book/10-11.jpg" loading="lazy" alt="Project">
+    <img src="/images/projects/2026-08-11-publication-ai-summer-book/50-51.jpg" loading="lazy" alt="Project">
   </div>
 </div>
 
@@ -37,7 +37,7 @@ Avec les agents, cette consommation peut encore augmenter à mesure que l’IA a
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/projects/ai-summer-book/62-63.png" loading="lazy" alt="Project">
+    <img src="/images/projects/2026-08-11-publication-ai-summer-book/62-63.jpg" loading="lazy" alt="Project">
   </div>
 </div>
 
@@ -47,9 +47,9 @@ Ce guide propose des repères concrets pour adopter des usages plus efficaces, p
 
 <section class="project-book__preview-section" aria-labelledby="project-book-preview-title">
   <h2 id="project-book-preview-title">Aperçu du livret</h2>
-  <div class="project-book__reader" data-book-reader data-page-count="33" data-pages-base="{{ '/images/projects/ai-summer-book/pages' | relative_url }}" tabindex="0" aria-label="Liseuse du livret Agents et optimisation des tokens">
+  <div class="project-book__reader" data-book-reader data-page-count="33" data-pages-base="{{ '/images/projects/2026-08-11-publication-ai-summer-book/pages' | relative_url }}" tabindex="0" aria-label="Liseuse du livret Agents et optimisation des tokens">
     <div class="project-book__page">
-      <img class="project-book__image no-lightense" src="{{ '/images/projects/ai-summer-book/pages/page-01.jpg' | relative_url }}" alt="Page 1 du livret Agents et optimisation des tokens" data-book-image>
+      <img class="project-book__image no-lightense" src="{{ '/images/projects/2026-08-11-publication-ai-summer-book/pages/page-01.jpg' | relative_url }}" alt="Page 1 du livret Agents et optimisation des tokens" data-book-image>
     </div>
     <div class="project-book__toolbar">
       <button class="project-book__control" type="button" aria-label="Page précédente" data-book-previous disabled>
