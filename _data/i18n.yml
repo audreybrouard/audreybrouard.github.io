@@ -4,29 +4,19 @@ fr:
       url: /
     - title: Projets
       url: /projects/
-    - title: Blog
-      url: /blog/
-    - title: Pages
-      submenu:
-        - title: À propos
-          url: /about/
-        - title: Contact
-          url: /contact/
-        - title: Éléments
-          url: /elements/
+    - title: À propos
+      url: /about/
+    - title: Contact
+      url: /contact/
   footer_menu:
     - title: Accueil
       url: /
     - title: Projets
       url: /projects/
-    - title: Blog
-      url: /blog/
     - title: À propos
       url: /about/
     - title: Contact
       url: /contact/
-    - title: Éléments
-      url: /elements/
   hero_description: Je partage mes projets, mes publications et mes retours d’expérience autour du développement logiciel, de la Developer Experience et des pratiques qui facilitent le quotidien des équipes techniques.
   projects_title: À découvrir
   projects_description: Sélection de projets
@@ -38,36 +28,29 @@ fr:
   dark_mode: Activer le mode sombre
   light_mode: Activer le mode clair
   picture_alt: Portrait de
+  choose_language: Choisir la langue
+  author_bio: Je partage mes projets, mes publications et mes retours d’expérience autour du développement logiciel, de la Developer Experience et des pratiques qui facilitent le quotidien des équipes techniques.
+  next_project: Projet suivant
 
 en:
   menu:
     - title: Home
       url: /en/
     - title: Projects
-      url: /projects/
-    - title: Blog
-      url: /blog/
-    - title: Pages
-      submenu:
-        - title: About
-          url: /about/
-        - title: Contact
-          url: /contact/
-        - title: Elements
-          url: /elements/
+      url: /en/projects/
+    - title: About
+      url: /en/about/
+    - title: Contact
+      url: /en/contact/
   footer_menu:
     - title: Home
       url: /en/
     - title: Projects
-      url: /projects/
-    - title: Blog
-      url: /blog/
+      url: /en/projects/
     - title: About
-      url: /about/
+      url: /en/about/
     - title: Contact
-      url: /contact/
-    - title: Elements
-      url: /elements/
+      url: /en/contact/
   hero_description: I work on AI applied to software development, Developer Experience, and software quality. I share my projects, publications, and lessons learned about the tools and practices shaping developers’ daily work.
   projects_title: Discover
   projects_description: A selection of projects, publications, and talks about AI, Developer Experience, and software development practices.
@@ -79,3 +62,6 @@ en:
   dark_mode: Enable dark mode
   light_mode: Enable light mode
   picture_alt: Portrait of
+  choose_language: Choose language
+  author_bio: I share my projects, publications, and lessons learned about software development, Developer Experience, and the practices that make technical teams’ daily work easier.
+  next_project: Next project

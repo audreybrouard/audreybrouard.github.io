@@ -103,6 +103,16 @@
   background-color: var(--white);
 }
 
+a.project-book__page {
+  display: block;
+  border: 0;
+  cursor: zoom-in;
+
+  &:hover {
+    border: 0;
+  }
+}
+
 .project-book__image {
   display: block;
   width: 100%;

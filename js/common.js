@@ -148,11 +148,13 @@ document.addEventListener("DOMContentLoaded", function() {
   ======================= */
   document.querySelectorAll("[data-book-reader]").forEach(function(reader) {
     var image = reader.querySelector("[data-book-image]"),
+      pageLink = reader.querySelector("[data-book-page-link]"),
       previous = reader.querySelector("[data-book-previous]"),
       next = reader.querySelector("[data-book-next]"),
       currentLabel = reader.querySelector("[data-book-current]"),
       pageCount = Number(reader.dataset.pageCount),
       pagesBase = reader.dataset.pagesBase,
+      altTemplate = reader.dataset.bookAltTemplate || "Page %page%",
       currentPage = 1;
 
     function pageUrl(page) {
@@ -169,7 +171,8 @@ document.addEventListener("DOMContentLoaded", function() {
     function showPage(page) {
       currentPage = Math.max(1, Math.min(pageCount, page));
       image.src = pageUrl(currentPage);
-      image.alt = "Page " + currentPage + " du livret Agents et optimisation des tokens";
+      image.alt = altTemplate.replace("%page%", currentPage);
+      pageLink.href = pageUrl(currentPage);
       currentLabel.textContent = currentPage;
       previous.disabled = currentPage === 1;
       next.disabled = currentPage === pageCount;

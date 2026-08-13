@@ -1,0 +1,34 @@
+---
+layout: default
+title: Projects
+permalink: /en/projects/
+lang: en
+translation_url: /projects/
+---
+
+<div class="container">
+  <div class="page-head">
+    <h1 class="page-title">Projects</h1>
+  </div>
+</div>
+
+<div class="projects-page container animate">
+  <div class="row">
+    {% assign localized_projects = site.projects | where: "lang", "en" | sort: "date" | reverse %}
+    {% for project in localized_projects %}
+      <article class="project col col-4 col-d-6 col-t-12">
+        <div class="project__content">
+          <a href="{{ project.url }}" class="project__image">
+            <img class="lazy" data-src="{{ project.miniature }}" alt="{{ project.title }}">
+          </a>
+          <div class="project__info">
+            <h3 class="project__title"><a href="{{ project.url }}">{{ project.title }}</a></h3>
+            {% if project.subtitle %}
+            <div class="project__subtitle">{{ project.subtitle }}</div>
+            {% endif %}
+          </div>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</div>

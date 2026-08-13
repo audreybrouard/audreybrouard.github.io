@@ -13,7 +13,8 @@
           </div>
 
           <div class="row">
-            {% assign sorted = site.projects | sort: 'date' | reverse %}
+            {% assign localized_projects = site.projects | where: "lang", lang %}
+            {% assign sorted = localized_projects | sort: 'date' | reverse %}
             {% for project in sorted limit:6 %}
             <article class="project col col-4 col-d-6 col-t-12">
               <div class="project__content">
@@ -37,7 +38,7 @@
   </div>
 
   <div class="section__navigation">
-    <a href="{{ '/projects' | relative_url }}" class="button button--primary section-button">{{ t.see_all }}</a>
+    <a href="{% if lang == 'en' %}{{ '/en/projects/' | relative_url }}{% else %}{{ '/projects/' | relative_url }}{% endif %}" class="button button--primary section-button">{{ t.see_all }}</a>
   </div>
 </section>
 <!-- end projects -->

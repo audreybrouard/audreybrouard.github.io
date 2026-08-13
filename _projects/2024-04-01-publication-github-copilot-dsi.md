@@ -3,6 +3,8 @@ title: "GitHub Copilot : une intégration sans turbulences dans notre DSI"
 date: 2024-04-01 08:01:35 +0300
 subtitle: Publication
 slug: talk-github-copilot-dsi-programmez
+lang: fr
+translation_url: /en/project/talk-github-copilot-dsi-programmez/
 image: '/images/projects/2024-03-01-publication-github-copilot/main.jpg'
 miniature: '/images/projects/2024-03-01-publication-github-copilot/miniature.jpg'
 ---

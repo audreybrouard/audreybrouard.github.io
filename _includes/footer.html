@@ -1,4 +1,6 @@
 <!-- begin footer -->
+{% assign lang = page.lang | default: "fr" %}
+{% assign t = site.data.i18n[lang] %}
 <footer class="footer">
   <div class="container">
     <div class="row">
@@ -15,7 +17,7 @@
                   </div>
                   <div class="footer__author-info">
                     <h3 class="footer__author-name">{{site.data.settings.author.author__name}}</h3>
-                    <p class="footer__author-bio">{{site.data.settings.author.author__bio}}</p>
+                    <p class="footer__author-bio">{{ t.author_bio }}</p>
                     {% if site.data.settings.social %}
                     <div class="social">
                       <ul class="social__list list-reset">
@@ -38,9 +40,9 @@
       
               <div class="col col-4 col-d-12">
                 <div class="footer__nav">
-                  <h3 class="footer__nav-title">Navigation</h3>
+                  <h3 class="footer__nav-title">{{ t.navigation }}</h3>
                   <ul class="footer__nav-list list-reset">
-                    {% for item in site.data.settings.footer_menu__settings.menu__items %}
+                    {% for item in t.footer_menu %}
                     <li class="footer__nav-item">
                       <a href="{{ item.url | relative_url }}" class="footer__nav-link">{{ item.title }}</a>
                     </li>
@@ -62,7 +64,7 @@
       <div class="col col-12">
         <div class="footer__info">
           <div class="footer__info-box">
-            <div class="copyright">{{site.time | date: '%Y'}} &copy; <a href="/">{{site.data.settings.title}}</a>. Crafted & Designed by <a href="https://jekyllthemes.io/developers/artem-sheludko">Artem Sheludko</a>.</div>
+            <div class="copyright">{{site.time | date: '%Y'}} &copy; <a href="{% if lang == 'en' %}{{ '/en/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">{{site.data.settings.title}}</a>.</div>
             <div class="top" title="Top"><i class="ion ion-ios-arrow-up"></i></div>
           </div>
         </div>

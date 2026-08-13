@@ -21,10 +21,11 @@
   &--primary {
     color: var(--dark);
     background-color: var(--button-background-color);
+  }
 
-    &:hover {
-      background: var(--button-background-hover);
-    }
+  &.button--primary:hover {
+    color: var(--dark);
+    background: var(--button-background-hover);
   }
 
   &--small {

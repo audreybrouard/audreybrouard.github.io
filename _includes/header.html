@@ -7,7 +7,7 @@
       <div class="header__inner col col-12">
 
         <div class="logo">
-          <a class="logo__link" href="{{ site.baseurl }}/">
+          <a class="logo__link" href="{% if lang == 'en' %}{{ '/en/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">
           {% if site.data.settings.logo %}
             <img class="logo__image" src="{{ site.baseurl }}{{ site.data.settings.logo }}" alt="{{ site.data.settings.title }}">
           {% else %}
@@ -48,25 +48,20 @@
           <i class="nav__icon icon__menu ion ion-md-menu"></i>
 
           <div class="language-switcher language-switcher-js">
-            <button class="language-switcher__button" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Choisir la langue">
+            <button class="language-switcher__button" type="button" aria-haspopup="true" aria-expanded="false" aria-label="{{ t.choose_language }}">
               <span class="language-switcher__current">{% if lang == "en" %}EN{% else %}FR{% endif %}</span>
               <i class="ion ion-ios-arrow-down" aria-hidden="true"></i>
             </button>
             <div class="language-switcher__menu" role="menu">
-              {% if jekyll.environment == "development" %}
-                {% if lang == "en" %}
-                  {% assign french_url = "../index.html" %}
-                  {% assign english_url = "index.html" %}
-                {% else %}
-                  {% assign french_url = "index.html" %}
-                  {% assign english_url = "en/index.html" %}
-                {% endif %}
+              {% if lang == "en" %}
+                {% assign french_url = page.translation_url | default: "/" %}
+                {% assign english_url = page.url %}
               {% else %}
-                {% assign french_url = "/" | relative_url %}
-                {% assign english_url = "/en/" | relative_url %}
+                {% assign french_url = page.url %}
+                {% assign english_url = page.translation_url | default: "/en/" %}
               {% endif %}
-              <a class="language-switcher__option{% unless lang == "en" %} is-active{% endunless %}" href="{{ french_url }}" lang="fr" data-language="fr" role="menuitem">Français</a>
-              <a class="language-switcher__option{% if lang == "en" %} is-active{% endif %}" href="{{ english_url }}" lang="en" data-language="en" role="menuitem">English</a>
+              <a class="language-switcher__option{% unless lang == "en" %} is-active{% endunless %}" href="{{ french_url | relative_url }}" lang="fr" data-language="fr" role="menuitem">Français</a>
+              <a class="language-switcher__option{% if lang == "en" %} is-active{% endif %}" href="{{ english_url | relative_url }}" lang="en" data-language="en" role="menuitem">English</a>
             </div>
           </div>
 

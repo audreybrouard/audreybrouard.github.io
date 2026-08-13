@@ -3,6 +3,8 @@ title: "GitHub Copilot : une intégration sans turbulences dans notre DSI"
 date: 2024-10-10 08:01:35 +0300
 subtitle: Talk
 slug: talk-github-copilot-dsi-forumphp2024
+lang: fr
+translation_url: /en/project/talk-github-copilot-dsi-forumphp2024/
 image: '/images/projects/2024-10-10-talk-github-copilot/main.jpg'
 miniature: '/images/projects/2024-10-10-talk-github-copilot/miniature.jpg'
 ---
@@ -21,15 +23,4 @@ Prêts à décoller ?
 
 <div class="project-video">
   <iframe class="reframe-off" src="https://www.youtube-nocookie.com/embed/rcqxuLzpCYY" title="GitHub Copilot : une intégration sans turbulences dans notre DSI" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
-<div class="gallery-box">
-  <div class="gallery">
-    <img src="/images/projects/2024-10-10-talk-github-copilot/01.jpg" loading="lazy" alt="Project">
-    <img src="/images/projects/2024-10-10-talk-github-copilot/02.jpg" loading="lazy" alt="Project">
-    <img src="/images/projects/2024-10-10-talk-github-copilot/03.jpg" loading="lazy" alt="Project">
-    <img src="/images/projects/2024-10-10-talk-github-copilot/04.jpg" loading="lazy" alt="Project">
-    <img src="/images/projects/2024-10-10-talk-github-copilot/05.jpg" loading="lazy" alt="Project">
-    <img src="/images/projects/2024-10-10-talk-github-copilot/06.jpg" loading="lazy" alt="Project">
-  </div>
 </div>

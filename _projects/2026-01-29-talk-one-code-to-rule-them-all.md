@@ -2,6 +2,8 @@
 title: One code to rule them all
 date: 2026-01-29 08:01:35 +0300
 subtitle: Talk
+lang: fr
+translation_url: /en/project/talk-one-code-to-rule-them-all/
 image: '/images/projects/2026-01-29-talk-one-code-to-rule-them-all/main.gif'
 miniature: '/images/projects/2026-01-29-talk-one-code-to-rule-them-all/miniature.jpg'
 ---

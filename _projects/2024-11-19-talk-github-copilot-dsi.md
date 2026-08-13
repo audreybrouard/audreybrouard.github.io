@@ -3,6 +3,8 @@ title: "GitHub Copilot : retour d'expérience au FROG"
 date: 2024-11-19 08:01:35 +0300
 subtitle: Talk
 slug: talk-github-copilot-dsi-frog
+lang: fr
+translation_url: /en/project/talk-github-copilot-dsi-frog/
 image: '/images/projects/2024-11-19-talk-github-copilot/main.jpg'
 miniature: '/images/projects/2024-11-19-talk-github-copilot/miniature.jpg'
 ---

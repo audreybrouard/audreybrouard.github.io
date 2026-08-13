@@ -2,6 +2,8 @@
 title: Quand le multiplateforme efface les frontières entre web et mobile
 date: 2025-11-01 08:01:35 +0300
 subtitle: Publication
+lang: fr
+translation_url: /en/project/publication-multiplatform/
 image: '/images/projects/2025-11-01-publication-multiplatform/main.jpg'
 miniature: '/images/projects/2025-11-01-publication-multiplatform/miniature.jpg'
 ---
